@@ -2,6 +2,14 @@
 
 This repository contains standalone, reproducible Clifford+$T$ quantum implementations, Grover phase-oracle constructions, and complete key-search resource estimators for the **Dialga** tweakable block-cipher family.
 
+It accompanies the paper
+
+> Manish Kumar Sahu, Shashirekha G, Mostafizar Rahman, Dhiman Saha and Santosh Biswas.
+> **Quantum Resource Estimation of the Dialga Family.**
+> INDOCRYPT 2026.
+
+The code was developed at the [de.ci.phe.red Lab](https://de.ci.phe.red), Department of Computer Science and Engineering, Indian Institute of Technology Bhilai, India, in collaboration with SyLLab, School of Physical and Mathematical Sciences, Nanyang Technological University, Singapore.
+
 ---
 
 ## 1. Overview of Cipher Variants & Implementation Profiles
@@ -172,4 +180,22 @@ Reports total resources including initial state preparation, all $N_G = 267,257,
 | `test_dialga_grover_common.py` | Unit tests for comparator and diffusion operators (Table 3). |
 | `run_all_resources.sh` | One-step automated execution of all resource estimators. |
 | `run_all_tests.sh` | One-step automated execution of all test suites. |
-| `LICENSE` | Anonymous MIT License. |
+| `LICENSE` | MIT License. |
+
+---
+
+## 6. Citation
+
+If you use this code, please cite:
+
+```bibtex
+@inproceedings{SahuGRSB26,
+  author    = {Manish Kumar Sahu and Shashirekha G and Mostafizar Rahman and
+               Dhiman Saha and Santosh Biswas},
+  title     = {Quantum Resource Estimation of the {Dialga} Family},
+  booktitle = {Progress in Cryptology -- {INDOCRYPT} 2026},
+  series    = {Lecture Notes in Computer Science},
+  publisher = {Springer},
+  year      = {2026}
+}
+```
